@@ -189,8 +189,22 @@
         </div>
 
         <div class=" banner-box">
+            <div class=" banner-box-top">
+                <a href="#"> <img src="./img/Layer-18.png" alt=""></a>
+                <a href="#"> <img src="./img/Layer-22.png" alt=""></a>
+                <a href="#"> <img src="./img/Layer-17.png" alt=""></a>
+                <a href="#"> <img src="./img/Layer-19.png" alt=""></a>
+            </div>
+            <div class=" banner-box-bottom">
+                <a href="#"> <img src="./img/Layer-16.png" alt=""></a>
+                <a href="#"> <img src="./img/Layer-19.png" alt=""></a>
+                <a href="#"> <img src="./img/Layer-21.png" alt=""></a>
+                <a href="#"> <img src="./img/Layer-17.png" alt=""></a>
+            </div>
 
         </div>
+
+        
         
     </body>
 
@@ -218,6 +232,7 @@
             loop:false,
             responsiveClass:true,
             dots:false,
+            nav:true,
             responsive:{
                 0:{
                     items: 1,
@@ -233,6 +248,19 @@
                 }
             }
 });
+
+let viewListControls = document.querySelector(".View-list .owl-controls");
+viewListControls.style.position = "absolute";
+viewListControls.style.top = "-10%";
+viewListControls.style.left = "0%";
+
+let prev = viewListControls.querySelector(".owl-nav .owl-prev");
+prev.innerHTML = "<i class=fa aria-hidden=true></i>";
+let iconPrev = prev.querySelector("i");
+iconPrev.classList.add("fa-chevron-right");
+iconPrev.style.color = "black";
+
+
     </script>
 </body>
 </html>

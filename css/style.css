@@ -222,3 +222,36 @@ border-radius: 50%;
 }
 
 /*------------- Banner-Box ------------*/
+
+.banner-box {
+    margin: 35px 20px 20px 20px;
+
+}
+.banner-box .banner-box-top ,
+.banner-box .banner-box-bottom {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.banner-box .banner-box-top a ,
+.banner-box .banner-box-bottom a {
+    margin-left: 10px;
+}
+.banner-box .banner-box-top a img ,
+.banner-box .banner-box-bottom a img {
+    width: 100%;
+}
+
+/*------------ Best-Sellers ----------*/
+.best-sellers {
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+.best-sellers .best-sellers-head {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
