@@ -152,3 +152,73 @@ border-radius: 50%;
 .slider .title .Product-Specifications .iphone {
     margin-left: 100px;
 }
+
+/*--------- Body -- special-offer ------------*/
+
+
+.special-offer {
+    margin:15px 20px 20px 20px;
+}
+.special {
+   display: flex;
+   align-items: center;
+   margin-top: 30px;
+}
+.special h3 {
+    font-size: 1.6em;
+    font-weight: 500;
+    margin-left:10px;
+    color: #4d4d4d;
+}
+.special a {
+    border-bottom: 1px solid rgba(77, 77, 77, .5);
+    text-decoration: none;
+    color: #4d4d4d;
+    padding-bottom: 3px;
+    font-size: .9em;
+    font-weight: 300;
+}
+.Box {
+ width: outo;
+ margin-left: 10px;
+ margin-top: 15px;
+}
+.special-offer .Box .img {
+    border: 1px solid rgba(0, 0, 0, .2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+}
+.special-offer .Box .img img {
+    display: flex;
+    height: 196px;
+    align-items: center;
+}
+.hard {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.special-offer .Box .hard a {
+    margin-top: 15px;
+    text-decoration: none;
+    color: #444444;
+    font-size: 1em;
+    font-weight: 400;
+}
+.special-offer .Box .hard .oduct__discount {
+    margin-top: 10px;
+    color: rgb(224, 69, 69);
+    text-decoration: line-through;
+    font-size: .9em;
+    font-weight: 500;
+}
+.special-offer .Box .hard .product__orginal {
+    margin-top: 10px;
+    font-size: 1.1em;
+    font-weight: 400;
+    color:#4caf50;
+}
+
+/*------------- Banner-Box ------------*/
