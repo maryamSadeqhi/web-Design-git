@@ -5,6 +5,8 @@ html {
     height: 100%;
     background-color: white;
     font-family: IRANSans;
+    font-size: .9em;
+    font-weight: 300;
 }
 
 .navigation {
@@ -183,14 +185,16 @@ border-radius: 50%;
  margin-left: 10px;
  margin-top: 15px;
 }
-.special-offer .Box .img {
+.special-offer .Box .img ,
+.best-sellers .Box .img{
     border: 1px solid rgba(0, 0, 0, .2);
     display: flex;
     align-items: center;
     justify-content: center;
     height: 250px;
 }
-.special-offer .Box .img img {
+.special-offer .Box .img img ,
+.best-sellers .Box .img img {
     display: flex;
     height: 196px;
     align-items: center;
@@ -200,23 +204,26 @@ border-radius: 50%;
     align-items: center;
     flex-direction: column;
 }
-.special-offer .Box .hard a {
+.special-offer .Box .hard a ,
+.best-sellers .Box .hard a {
     margin-top: 15px;
     text-decoration: none;
     color: #444444;
     font-size: 1em;
     font-weight: 400;
 }
-.special-offer .Box .hard .oduct__discount {
+.special-offer .Box .hard .oduct__discount ,
+.best-sellers .View-list  .Box .hard .oduct__discount {
     margin-top: 10px;
     color: rgb(224, 69, 69);
     text-decoration: line-through;
     font-size: .9em;
     font-weight: 500;
 }
-.special-offer .Box .hard .product__orginal {
+.special-offer .Box .hard .product__orginal ,
+.best-sellers .View-list  .Box .hard .product__orginal {
     margin-top: 10px;
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: 400;
     color:#4caf50;
 }
@@ -246,12 +253,131 @@ border-radius: 50%;
 
 /*------------ Best-Sellers ----------*/
 .best-sellers {
-    margin-top: 15px;
-    margin-bottom: 25px;
+    margin:15px 20px 25px 20px;
+    padding-bottom: 25px;
 }
 .best-sellers .best-sellers-head {
  display: flex;
  flex-direction: column;
  justify-content: center;
  align-items: center;
+ margin-top: 35px;
+}
+.best-sellers .best-sellers-head h3 {
+    font-size: 1.6em;
+    font-weight: 400;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0 ,.6);
+}
+.best-sellers .best-sellers-head .p4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    font-size: .9em;
+    line-height:1.8em;
+    width: 70%;
+  
+}
+.best-sellers .best-sellers-head  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    width: 70%;
+    line-height: 1.6em;
+    font-size: .9em;
+}
+.best-sellers .best-sellers-nav a {
+  position: absolute;
+  left: 25px;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(77, 77, 77, .5);
+  font-size: .9em;
+  font-weight: 300;
+  color: #4d4d4d;
+    padding-bottom: 3px;
+}
+.best-sellers .best-sellers-nav a:hover {
+    border-bottom: none;
+}
+/*--------------- Best-Sellers & View-List -------------------*/
+.View-list {
+    display: flex;
+    margin-top: 15px;
+}
+
+/*--------------Product-Review ---------------*/
+
+.Product-Review {
+    display: flex;
+    background-color: #f5f5f5;
+}
+.Product-Review .Product-Review-head {
+    background:rgba(0, 0, 0 ,.2 ) url(../img/comment.png) ;   
+    background-blend-mode: luminosity;
+                                 
+    height: 522px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    flex-basis: 30%;
+    position: relative;
+}
+
+/* .Product-Review .Product-Review-head::after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0 ,.4);
+} */
+.Product-Review .Product-Review-head .content {
+    z-index: 1;
+    padding-right: 10px;
+    padding-left: 10px;
+    line-height: 1.8;
+}
+.Product-Review .Product-Review-head .content h3 {
+    font-weight: 400;
+    font-size: 2em;
+}
+.Product-Review .Product-Review-head .content p {
+    margin: 10px;
+    font-size: .9em;
+    font-weight: 300;
+}
+.Product-Review .Product-Review-head .content a {
+    font-size: 1.2em;
+    border-bottom: 1px solid;
+    color: white;
+    text-decoration: none;
+}
+.Product-Review-Box {
+    display: flex;
+    flex-basis: 70%;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.Product-Review-Box .Product-Review-Boxx {
+    background-color:white;
+    border: 1px solid rgba(0, 0, 0, .1);
+    margin: 10px;
+    padding: 20px;
+    flex-basis: calc(50% - 20px);
+}
+.Product-Review-Box .Product-Review-Boxx h3 {
+    color: #333;
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgba(0, 0, 0 ,.2);
+    font-size: 1.2em;
+}
+.Product-Review-Box .Product-Review-Boxx p {
+    line-height: 1.6em;
+    padding-top: 15px;
 }
